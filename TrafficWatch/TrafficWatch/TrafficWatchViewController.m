@@ -37,13 +37,14 @@
     UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:MyIdentifier];
     
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:MyIdentifier];
     }
     
     TrafficWatchAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     TWIncident *anIncident = [appDelegate objectInIncidentsAtIndex:[indexPath row]]; 
-    cell.textLabel.text = anIncident.title; 
+    cell.textLabel.text = anIncident.title;
+    cell.detailTextLabel.text = anIncident.summary;
     
     return cell;
 }
