@@ -17,6 +17,7 @@
 		40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */; };
 		40ED5D4913A8F52900B44FAD /* TrafficWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */; };
 		40ED5D5113A8FD1C00B44FAD /* TWIncident.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D5013A8FD1C00B44FAD /* TWIncident.m */; };
+		40ED5D5413A901B300B44FAD /* TWIncidentsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D5313A901B300B44FAD /* TWIncidentsParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		40ED5D4813A8F52900B44FAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TrafficWatchViewController.xib; sourceTree = "<group>"; };
 		40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncident.h; sourceTree = "<group>"; };
 		40ED5D5013A8FD1C00B44FAD /* TWIncident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncident.m; sourceTree = "<group>"; };
+		40ED5D5213A901B300B44FAD /* TWIncidentsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWIncidentsParser.h; path = ../TWIncidentsParser.h; sourceTree = "<group>"; };
+		40ED5D5313A901B300B44FAD /* TWIncidentsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWIncidentsParser.m; path = ../TWIncidentsParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +84,16 @@
 		40ED5D3713A8F52800B44FAD /* TrafficWatch */ = {
 			isa = PBXGroup;
 			children = (
+				40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */,
+				40ED5D5013A8FD1C00B44FAD /* TWIncident.m */,
+				40ED5D5213A901B300B44FAD /* TWIncidentsParser.h */,
+				40ED5D5313A901B300B44FAD /* TWIncidentsParser.m */,
 				40ED5D4013A8F52900B44FAD /* TrafficWatchAppDelegate.h */,
 				40ED5D4113A8F52900B44FAD /* TrafficWatchAppDelegate.m */,
 				40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */,
 				40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */,
 				40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */,
 				40ED5D3813A8F52800B44FAD /* Supporting Files */,
-				40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */,
-				40ED5D5013A8FD1C00B44FAD /* TWIncident.m */,
 			);
 			path = TrafficWatch;
 			sourceTree = "<group>";
@@ -129,6 +134,9 @@
 /* Begin PBXProject section */
 		40ED5D2413A8F52800B44FAD /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 40ED5D2713A8F52800B44FAD /* Build configuration list for PBXProject "TrafficWatch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -168,6 +176,7 @@
 				40ED5D4213A8F52900B44FAD /* TrafficWatchAppDelegate.m in Sources */,
 				40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */,
 				40ED5D5113A8FD1C00B44FAD /* TWIncident.m in Sources */,
+				40ED5D5413A901B300B44FAD /* TWIncidentsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +222,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -231,7 +240,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -245,7 +254,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
 				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -257,7 +268,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
 				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -281,6 +294,7 @@
 				40ED5D4E13A8F52900B44FAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,8 @@
 //
 
 #import "TrafficWatchAppDelegate.h"
-
 #import "TrafficWatchViewController.h"
+#import "TWIncidentsParser.h"
 
 @implementation TrafficWatchAppDelegate
 
@@ -22,6 +22,8 @@
     self.viewController = [[TrafficWatchViewController alloc] initWithNibName:@"TrafficWatchViewController" bundle:nil]; 
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    [self loadIncidentsData];
     return YES;
 }
 
@@ -62,6 +64,15 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+-(void) loadIncidentsData;
+{
+    static NSString *kIncidentsURLString = @"http://www.freiefahrt.info/lmst.de_DE.xml";
+    NSError *error = nil;
+    TWIncidentsParser *incidentsParser = [[TWIncidentsParser alloc] init];
+    [incidentsParser parseFileAtURL:[NSURL URLWithString:kIncidentsURLString]
+                         parseError:&error];
 }
 
 @end

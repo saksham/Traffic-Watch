@@ -42,6 +42,7 @@
     TWIncident *anIncident = [[TWIncident alloc] init];
     NSLog(@"displaying incident: %@", anIncident);
     cell.textLabel.text = anIncident.title;
+    
     return cell;
 }
 

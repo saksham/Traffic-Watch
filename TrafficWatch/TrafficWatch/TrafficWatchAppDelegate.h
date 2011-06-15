@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) TrafficWatchViewController *viewController;
 
+-(void) loadIncidentsData;
+
 @end
