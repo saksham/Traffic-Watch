@@ -7,6 +7,7 @@
 //
 
 #import "TWIncidentsParser.h"
+#import "TrafficWatchAppDelegate.h"
 
 @interface TWIncidentsParser()
 @property (nonatomic, retain) TWIncident *currentIncidentObject;
@@ -114,7 +115,9 @@ didStartElement:(NSString *)elementName
     }
     
     if ([elementName isEqualToString:@"entry"]) { 
-        NSLog(@"parsed: %@", self.currentIncidentObject); 
+        TrafficWatchAppDelegate *appDelegate = [[UIApplication sharedApplication]
+                                                delegate];
+        [appDelegate addToIncidents:self.currentIncidentObject];
         return;
     } 
     

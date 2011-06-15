@@ -7,15 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TWIncident.h"
 
 @class TrafficWatchViewController;
 
-@interface TrafficWatchAppDelegate : UIResponder <UIApplicationDelegate>
+@interface TrafficWatchAppDelegate : UIResponder <UIApplicationDelegate> {
+    NSMutableArray *incidents;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) TrafficWatchViewController *viewController;
 
 -(void) loadIncidentsData;
+
+-(NSUInteger) countOfIncidents;
+-(void) addToIncidents:(TWIncident *)newIncident;
+-(id) objectInIncidentsAtIndex:(NSUInteger)index;
 
 @end

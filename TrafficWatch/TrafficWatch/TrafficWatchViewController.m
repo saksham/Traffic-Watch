@@ -7,6 +7,7 @@
 //
 
 #import "TrafficWatchViewController.h"
+#import "TrafficWatchAppDelegate.h"
 #import "TWIncident.h"
 
 @implementation TrafficWatchViewController
@@ -25,7 +26,8 @@
 
 -(NSInteger) tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger) section;
 {
-    return 1;
+    TrafficWatchAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    return [appDelegate countOfIncidents];
 }
 
 -(UITableViewCell *) tableView:(UITableView *)aTableView
@@ -39,9 +41,9 @@
                                       reuseIdentifier:MyIdentifier];
     }
     
-    TWIncident *anIncident = [[TWIncident alloc] init];
-    NSLog(@"displaying incident: %@", anIncident);
-    cell.textLabel.text = anIncident.title;
+    TrafficWatchAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    TWIncident *anIncident = [appDelegate objectInIncidentsAtIndex:[indexPath row]]; 
+    cell.textLabel.text = anIncident.title; 
     
     return cell;
 }

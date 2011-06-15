@@ -10,8 +10,13 @@
 #import "TrafficWatchViewController.h"
 #import "TWIncidentsParser.h"
 
-@implementation TrafficWatchAppDelegate
+//For defining private methods
+@interface TrafficWatchAppDelegate()
+@property (nonatomic, retain) NSMutableArray *incidents;
+@end
 
+@implementation TrafficWatchAppDelegate
+@synthesize incidents;
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
@@ -70,9 +75,29 @@
 {
     static NSString *kIncidentsURLString = @"http://www.freiefahrt.info/lmst.de_DE.xml";
     NSError *error = nil;
+    
+    self.incidents = [NSMutableArray array];
+     
     TWIncidentsParser *incidentsParser = [[TWIncidentsParser alloc] init];
     [incidentsParser parseFileAtURL:[NSURL URLWithString:kIncidentsURLString]
                          parseError:&error];
+    
+    NSLog(@"Parser has finished. incidents: %@", self.incidents);
+}
+
+-(NSUInteger) countOfIncidents;
+{
+    return [self.incidents count];
+}
+
+-(void) addToIncidents:(TWIncident *)newIncident;
+{
+    [self.incidents addObject:newIncident];
+}
+
+-(id) objectInIncidentsAtIndex:(NSUInteger)index;
+{
+    return [self.incidents objectAtIndex:index];
 }
 
 @end
