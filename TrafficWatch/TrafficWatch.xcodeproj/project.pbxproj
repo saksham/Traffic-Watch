@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40ED5D3213A8F52800B44FAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ED5D3113A8F52800B44FAD /* UIKit.framework */; };
+		40ED5D3413A8F52800B44FAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ED5D3313A8F52800B44FAD /* Foundation.framework */; };
+		40ED5D3613A8F52800B44FAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ED5D3513A8F52800B44FAD /* CoreGraphics.framework */; };
+		40ED5D3C13A8F52900B44FAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D3A13A8F52900B44FAD /* InfoPlist.strings */; };
+		40ED5D3E13A8F52900B44FAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D3D13A8F52900B44FAD /* main.m */; };
+		40ED5D4213A8F52900B44FAD /* TrafficWatchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D4113A8F52900B44FAD /* TrafficWatchAppDelegate.m */; };
+		40ED5D4413A8F52900B44FAD /* TrafficWatchViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */; };
+		40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */; };
+		40ED5D4913A8F52900B44FAD /* TrafficWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40ED5D2D13A8F52800B44FAD /* TrafficWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40ED5D3113A8F52800B44FAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40ED5D3313A8F52800B44FAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40ED5D3513A8F52800B44FAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40ED5D3913A8F52800B44FAD /* TrafficWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficWatch-Info.plist"; sourceTree = "<group>"; };
+		40ED5D3B13A8F52900B44FAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40ED5D3D13A8F52900B44FAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40ED5D3F13A8F52900B44FAD /* TrafficWatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrafficWatch-Prefix.pch"; sourceTree = "<group>"; };
+		40ED5D4013A8F52900B44FAD /* TrafficWatchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficWatchAppDelegate.h; sourceTree = "<group>"; };
+		40ED5D4113A8F52900B44FAD /* TrafficWatchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficWatchAppDelegate.m; sourceTree = "<group>"; };
+		40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficWatchViewController.h; sourceTree = "<group>"; };
+		40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficWatchViewController.m; sourceTree = "<group>"; };
+		40ED5D4813A8F52900B44FAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TrafficWatchViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40ED5D2A13A8F52800B44FAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40ED5D3213A8F52800B44FAD /* UIKit.framework in Frameworks */,
+				40ED5D3413A8F52800B44FAD /* Foundation.framework in Frameworks */,
+				40ED5D3613A8F52800B44FAD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40ED5D2213A8F52800B44FAD = {
+			isa = PBXGroup;
+			children = (
+				40ED5D3713A8F52800B44FAD /* TrafficWatch */,
+				40ED5D3013A8F52800B44FAD /* Frameworks */,
+				40ED5D2E13A8F52800B44FAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40ED5D2E13A8F52800B44FAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40ED5D2D13A8F52800B44FAD /* TrafficWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40ED5D3013A8F52800B44FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40ED5D3113A8F52800B44FAD /* UIKit.framework */,
+				40ED5D3313A8F52800B44FAD /* Foundation.framework */,
+				40ED5D3513A8F52800B44FAD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40ED5D3713A8F52800B44FAD /* TrafficWatch */ = {
+			isa = PBXGroup;
+			children = (
+				40ED5D4013A8F52900B44FAD /* TrafficWatchAppDelegate.h */,
+				40ED5D4113A8F52900B44FAD /* TrafficWatchAppDelegate.m */,
+				40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */,
+				40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */,
+				40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */,
+				40ED5D3813A8F52800B44FAD /* Supporting Files */,
+			);
+			path = TrafficWatch;
+			sourceTree = "<group>";
+		};
+		40ED5D3813A8F52800B44FAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40ED5D3913A8F52800B44FAD /* TrafficWatch-Info.plist */,
+				40ED5D3A13A8F52900B44FAD /* InfoPlist.strings */,
+				40ED5D3D13A8F52900B44FAD /* main.m */,
+				40ED5D3F13A8F52900B44FAD /* TrafficWatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40ED5D2C13A8F52800B44FAD /* TrafficWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40ED5D4C13A8F52900B44FAD /* Build configuration list for PBXNativeTarget "TrafficWatch" */;
+			buildPhases = (
+				40ED5D2913A8F52800B44FAD /* Sources */,
+				40ED5D2A13A8F52800B44FAD /* Frameworks */,
+				40ED5D2B13A8F52800B44FAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficWatch;
+			productName = TrafficWatch;
+			productReference = 40ED5D2D13A8F52800B44FAD /* TrafficWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40ED5D2413A8F52800B44FAD /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 40ED5D2713A8F52800B44FAD /* Build configuration list for PBXProject "TrafficWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40ED5D2213A8F52800B44FAD;
+			productRefGroup = 40ED5D2E13A8F52800B44FAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40ED5D2C13A8F52800B44FAD /* TrafficWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40ED5D2B13A8F52800B44FAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40ED5D3C13A8F52900B44FAD /* InfoPlist.strings in Resources */,
+				40ED5D4413A8F52900B44FAD /* TrafficWatchViewController.h in Resources */,
+				40ED5D4913A8F52900B44FAD /* TrafficWatchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40ED5D2913A8F52800B44FAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40ED5D3E13A8F52900B44FAD /* main.m in Sources */,
+				40ED5D4213A8F52900B44FAD /* TrafficWatchAppDelegate.m in Sources */,
+				40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		40ED5D3A13A8F52900B44FAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40ED5D3B13A8F52900B44FAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40ED5D4813A8F52900B44FAD /* en */,
+			);
+			name = TrafficWatchViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40ED5D4A13A8F52900B44FAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40ED5D4B13A8F52900B44FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40ED5D4D13A8F52900B44FAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		40ED5D4E13A8F52900B44FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40ED5D2713A8F52800B44FAD /* Build configuration list for PBXProject "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40ED5D4A13A8F52900B44FAD /* Debug */,
+				40ED5D4B13A8F52900B44FAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40ED5D4C13A8F52900B44FAD /* Build configuration list for PBXNativeTarget "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40ED5D4D13A8F52900B44FAD /* Debug */,
+				40ED5D4E13A8F52900B44FAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40ED5D2413A8F52800B44FAD /* Project object */;
+}
