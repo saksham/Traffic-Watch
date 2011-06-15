@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		409BE2DA13A9124200DBEA77 /* TWIncidentsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE2D913A9124200DBEA77 /* TWIncidentsParser.m */; };
 		40ED5D3213A8F52800B44FAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ED5D3113A8F52800B44FAD /* UIKit.framework */; };
 		40ED5D3413A8F52800B44FAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ED5D3313A8F52800B44FAD /* Foundation.framework */; };
 		40ED5D3613A8F52800B44FAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ED5D3513A8F52800B44FAD /* CoreGraphics.framework */; };
@@ -17,10 +18,11 @@
 		40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */; };
 		40ED5D4913A8F52900B44FAD /* TrafficWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */; };
 		40ED5D5113A8FD1C00B44FAD /* TWIncident.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D5013A8FD1C00B44FAD /* TWIncident.m */; };
-		40ED5D5413A901B300B44FAD /* TWIncidentsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D5313A901B300B44FAD /* TWIncidentsParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		409BE2D813A9124200DBEA77 /* TWIncidentsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncidentsParser.h; sourceTree = "<group>"; };
+		409BE2D913A9124200DBEA77 /* TWIncidentsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncidentsParser.m; sourceTree = "<group>"; };
 		40ED5D2D13A8F52800B44FAD /* TrafficWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40ED5D3113A8F52800B44FAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		40ED5D3313A8F52800B44FAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,8 +38,6 @@
 		40ED5D4813A8F52900B44FAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TrafficWatchViewController.xib; sourceTree = "<group>"; };
 		40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncident.h; sourceTree = "<group>"; };
 		40ED5D5013A8FD1C00B44FAD /* TWIncident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncident.m; sourceTree = "<group>"; };
-		40ED5D5213A901B300B44FAD /* TWIncidentsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWIncidentsParser.h; path = ../TWIncidentsParser.h; sourceTree = "<group>"; };
-		40ED5D5313A901B300B44FAD /* TWIncidentsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWIncidentsParser.m; path = ../TWIncidentsParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,10 @@
 		40ED5D3713A8F52800B44FAD /* TrafficWatch */ = {
 			isa = PBXGroup;
 			children = (
+				409BE2D813A9124200DBEA77 /* TWIncidentsParser.h */,
+				409BE2D913A9124200DBEA77 /* TWIncidentsParser.m */,
 				40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */,
 				40ED5D5013A8FD1C00B44FAD /* TWIncident.m */,
-				40ED5D5213A901B300B44FAD /* TWIncidentsParser.h */,
-				40ED5D5313A901B300B44FAD /* TWIncidentsParser.m */,
 				40ED5D4013A8F52900B44FAD /* TrafficWatchAppDelegate.h */,
 				40ED5D4113A8F52900B44FAD /* TrafficWatchAppDelegate.m */,
 				40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */,
@@ -176,7 +176,7 @@
 				40ED5D4213A8F52900B44FAD /* TrafficWatchAppDelegate.m in Sources */,
 				40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */,
 				40ED5D5113A8FD1C00B44FAD /* TWIncident.m in Sources */,
-				40ED5D5413A901B300B44FAD /* TWIncidentsParser.m in Sources */,
+				409BE2DA13A9124200DBEA77 /* TWIncidentsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
