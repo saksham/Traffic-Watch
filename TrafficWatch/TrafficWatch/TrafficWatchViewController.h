@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TrafficWatchViewController : UIViewController
+@interface TrafficWatchViewController : UIViewController<UITableViewDataSource> {
+    UITableView *tableView;
+}
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end

@@ -235,6 +235,7 @@
 		40ED5D4D13A8F52900B44FAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
 				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
@@ -246,6 +247,7 @@
 		40ED5D4E13A8F52900B44FAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
 				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
