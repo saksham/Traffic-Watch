@@ -7,6 +7,7 @@
 //
 
 #import "TrafficWatchViewController.h"
+#import "TWIncident.h"
 
 @implementation TrafficWatchViewController
 @synthesize tableView;
@@ -38,7 +39,9 @@
                                       reuseIdentifier:MyIdentifier];
     }
     
-    cell.textLabel.text = @"Hello, world!";
+    TWIncident *anIncident = [[TWIncident alloc] init];
+    NSLog(@"displaying incident: %@", anIncident);
+    cell.textLabel.text = anIncident.title;
     return cell;
 }
 

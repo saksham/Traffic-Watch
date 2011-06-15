@@ -16,6 +16,7 @@
 		40ED5D4413A8F52900B44FAD /* TrafficWatchViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */; };
 		40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */; };
 		40ED5D4913A8F52900B44FAD /* TrafficWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */; };
+		40ED5D5113A8FD1C00B44FAD /* TWIncident.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ED5D5013A8FD1C00B44FAD /* TWIncident.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		40ED5D4313A8F52900B44FAD /* TrafficWatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficWatchViewController.h; sourceTree = "<group>"; };
 		40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficWatchViewController.m; sourceTree = "<group>"; };
 		40ED5D4813A8F52900B44FAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TrafficWatchViewController.xib; sourceTree = "<group>"; };
+		40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncident.h; sourceTree = "<group>"; };
+		40ED5D5013A8FD1C00B44FAD /* TWIncident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncident.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				40ED5D4513A8F52900B44FAD /* TrafficWatchViewController.m */,
 				40ED5D4713A8F52900B44FAD /* TrafficWatchViewController.xib */,
 				40ED5D3813A8F52800B44FAD /* Supporting Files */,
+				40ED5D4F13A8FD1C00B44FAD /* TWIncident.h */,
+				40ED5D5013A8FD1C00B44FAD /* TWIncident.m */,
 			);
 			path = TrafficWatch;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				40ED5D3E13A8F52900B44FAD /* main.m in Sources */,
 				40ED5D4213A8F52900B44FAD /* TrafficWatchAppDelegate.m in Sources */,
 				40ED5D4613A8F52900B44FAD /* TrafficWatchViewController.m in Sources */,
+				40ED5D5113A8FD1C00B44FAD /* TWIncident.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
